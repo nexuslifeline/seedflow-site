@@ -61,11 +61,11 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/seedflow-logo.png"
+                  src="/images/logo/seed-logo.png"
                   alt="Seedflow"
-                  width={212}
-                  height={51}
-                  className="h-auto w-[180px]"
+                  width={180}
+                  height={41}
+                  className="h-10 w-auto"
                 />
               </Link>
             </div>
