@@ -164,8 +164,22 @@ layer(base);
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  section[id] {
+    scroll-margin-top: 104px;
+  }
+
   body {
     font-family: "Inter", sans-serif;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 

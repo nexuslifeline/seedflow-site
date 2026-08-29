@@ -1,6 +1,6 @@
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
-import DigitalServicesShowcase from "@/components/Services/DigitalServicesShowcase";
+import HowItWorks from "@/components/HowItWorks";
 import AboutHome from "@/components/About/AboutHome";
 import WhyChooseUs from "@/components/About/WhyChooseUs";
 import ReadyToHelp from "@/components/ReadyToHelp";
@@ -24,7 +24,7 @@ export default function Home() {
     <>
       <Hero />
       <Features />
-      <DigitalServicesShowcase />
+      <HowItWorks />
       <AboutHome />
       <WhyChooseUs />
       <ReadyToHelp />

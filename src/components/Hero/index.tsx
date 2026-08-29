@@ -46,7 +46,7 @@ const Hero = () => {
                 </span>
               </Link>
               <Link
-                href="/products/nexus-finance-suite"
+                href="/#how-it-works"
                 className="border-primary/25 text-primary hover:border-primary/50 inline-flex items-center justify-center rounded-full border bg-white/60 px-7 py-4 text-base font-bold transition duration-300 hover:bg-white"
               >
                 See how it works
