@@ -25,9 +25,9 @@ export default function Home() {
       <HowItWorks />
       <AppAdvantage />
       <ProductOverview />
-      <FAQ />
       <FinanceWorkflow />
       <Testimonials />
+      <FAQ />
       <Contact />
       <Blog />
       <CTA />

@@ -61,11 +61,11 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/logo-black.png"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full"
+                  src="/images/logo/seedflow-logo.png"
+                  alt="Seedflow"
+                  width={212}
+                  height={51}
+                  className="h-auto w-[180px]"
                 />
               </Link>
             </div>
@@ -165,10 +165,33 @@ const Header = () => {
                         )}
                       </li>
                     ))}
+                    <li className="mt-3 border-t border-[#eeeaf3] pt-3 lg:hidden">
+                      <Link
+                        href="/signin"
+                        onClick={closeNavigation}
+                        className="text-dark hover:text-primary block py-2.5 text-sm font-semibold"
+                      >
+                        Sign in
+                      </Link>
+                      <Link
+                        href="/signup"
+                        onClick={closeNavigation}
+                        className="bg-primary hover:bg-primary/90 mt-2 block rounded-sm px-4 py-2.5 text-center text-sm font-semibold text-white"
+                      >
+                        Join the beta
+                      </Link>
+                    </li>
                   </ul>
                 </nav>
               </div>
               <div className="flex items-center justify-end lg:pr-0">
+                <Link
+                  href="/signin"
+                  onClick={closeNavigation}
+                  className="text-dark hover:text-primary mr-4 hidden text-sm font-semibold transition duration-300 sm:inline-flex"
+                >
+                  Sign in
+                </Link>
                 <Link
                   href="/signup"
                   onClick={closeNavigation}

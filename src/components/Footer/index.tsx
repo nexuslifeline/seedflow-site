@@ -78,10 +78,11 @@ const Footer = () => {
           <div className="max-w-[330px]">
             <Link href="/" className="mb-7 inline-block">
               <Image
-                src="/images/logo/logo-2.svg"
+                src="/images/logo/seedflow-logo.png"
                 alt="Seedflow"
-                width={138}
-                height={27}
+                width={212}
+                height={51}
+                className="h-auto w-[180px]"
               />
             </Link>
             <p className="mb-7 text-sm leading-7 text-[#6d6978]">

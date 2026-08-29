@@ -84,6 +84,14 @@ const Hero = () => {
               aria-hidden="true"
               className="absolute top-[42%] left-[48%] h-[190px] w-[190px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/25 blur-2xl sm:h-[260px] sm:w-[260px]"
             />
+            <div
+              aria-hidden="true"
+              className="border-primary/25 bg-primary/5 absolute top-1/2 left-1/2 h-[330px] w-[330px] -translate-x-1/2 -translate-y-1/2 rounded-full border-2 bg-gradient-to-br from-primary/15 via-primary/5 to-transparent shadow-[0_0_0_18px_rgba(115,50,254,0.05)] sm:h-[480px] sm:w-[480px]"
+            />
+            <div
+              aria-hidden="true"
+              className="border-primary/25 absolute top-[42%] left-[48%] h-[210px] w-[210px] -translate-x-1/2 -translate-y-1/2 rounded-full border bg-primary/5 sm:h-[320px] sm:w-[320px]"
+            />
             <Image
               src="/images/hero/seedflow-phone.png"
               alt="Seedflow accounting app on a mobile phone"
