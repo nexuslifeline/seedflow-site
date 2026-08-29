@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import AppAdvantage from "@/components/AppAdvantage";
-import AboutHome from "@/components/About/AboutHome";
+import ProductOverview from "@/components/ProductOverview";
 import ReadyToHelp from "@/components/ReadyToHelp";
 import Brands from "@/components/Brands";
 import Teams from "@/components/Teams";
@@ -26,7 +26,7 @@ export default function Home() {
       <Features />
       <HowItWorks />
       <AppAdvantage />
-      <AboutHome />
+      <ProductOverview />
       <ReadyToHelp />
       <Brands />
       <Teams />
