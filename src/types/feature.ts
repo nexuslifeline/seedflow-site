@@ -1,5 +1,6 @@
 import type { JSX } from "react";
-export type Service = {
+
+export type Feature = {
   id: number;
   icon: JSX.Element;
   title: string;

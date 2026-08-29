@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
+import Features from "@/components/Features";
 import DigitalServicesShowcase from "@/components/Services/DigitalServicesShowcase";
 import AboutHome from "@/components/About/AboutHome";
 import WhyChooseUs from "@/components/About/WhyChooseUs";
@@ -23,7 +23,7 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Services />
+      <Features />
       <DigitalServicesShowcase />
       <AboutHome />
       <WhyChooseUs />
