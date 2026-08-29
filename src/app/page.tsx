@@ -4,10 +4,8 @@ import HowItWorks from "@/components/HowItWorks";
 import AppAdvantage from "@/components/AppAdvantage";
 import ProductOverview from "@/components/ProductOverview";
 import FAQ from "@/components/FAQ";
-import Brands from "@/components/Brands";
-import Teams from "@/components/Teams";
+import FinanceWorkflow from "@/components/FinanceWorkflow";
 import Testimonials from "@/components/Testimonials";
-import UpcomingProducts from "@/components/UpcomingProducts";
 import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import CTA from "@/components/CTA";
@@ -28,10 +26,8 @@ export default function Home() {
       <AppAdvantage />
       <ProductOverview />
       <FAQ />
-      <Brands />
-      <Teams />
+      <FinanceWorkflow />
       <Testimonials />
-      <UpcomingProducts />
       <Contact />
       <Blog />
       <CTA />

@@ -1,150 +1,72 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const CTA = () => {
   return (
-    <section className="dark:bg-bg-color-dark bg-gray-light border-body-color/[.15] relative z-10 overflow-hidden border-t py-16 md:py-20 lg:py-28 dark:border-white/[.15]">
-      {/* Decorative Circles - Top Left */}
-      <div className="absolute top-0 left-0 z-0 opacity-20 lg:opacity-30">
-        <svg
-          width="300"
-          height="300"
-          viewBox="0 0 300 300"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="150" cy="150" r="120" fill="url(#paint0_linear_cta)" />
-          <circle cx="50" cy="80" r="25" fill="url(#paint1_radial_cta)" />
-          <circle cx="80" cy="220" r="40" fill="url(#paint2_radial_cta)" />
-          <circle
-            opacity="0.8"
-            cx="200"
-            cy="100"
-            r="90"
-            transform="rotate(-30 200 100)"
-            stroke="url(#paint3_linear_cta)"
-          />
-          <defs>
-            <linearGradient
-              id="paint0_linear_cta"
-              x1="30"
-              y1="30"
-              x2="270"
-              y2="270"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-            <radialGradient
-              id="paint1_radial_cta"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(50 80) rotate(90) scale(25)"
-            >
-              <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.12" />
-            </radialGradient>
-            <radialGradient
-              id="paint2_radial_cta"
-              cx="0"
-              cy="0"
-              r="1"
-              gradientUnits="userSpaceOnUse"
-              gradientTransform="translate(80 220) rotate(90) scale(40)"
-            >
-              <stop offset="0.145833" stopColor="#4A6CF7" stopOpacity="0" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0.12" />
-            </radialGradient>
-            <linearGradient
-              id="paint3_linear_cta"
-              x1="200"
-              y1="10"
-              x2="200"
-              y2="190"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4A6CF7" />
-              <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-
-      {/* Decorative Wavy Lines */}
-      <div className="absolute right-0 bottom-0 z-0 opacity-10 dark:opacity-5">
-        <svg
-          width="400"
-          height="300"
-          viewBox="0 0 400 300"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M400 200C350 180 300 160 250 170C200 180 150 200 100 190C50 180 0 160 -50 150"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            className="text-primary"
-          />
-          <path
-            d="M400 220C350 200 300 180 250 190C200 200 150 220 100 210C50 200 0 180 -50 170"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            className="text-primary"
-          />
-          <path
-            d="M400 240C350 220 300 200 250 210C200 220 150 240 100 230C50 220 0 200 -50 190"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            className="text-primary"
-          />
-          <path
-            d="M400 260C350 240 300 220 250 230C200 240 150 260 100 250C50 240 0 220 -50 210"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            className="text-primary"
-          />
-          <path
-            d="M400 280C350 260 300 240 250 250C200 260 150 280 100 270C50 260 0 240 -50 230"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            className="text-primary"
-          />
-        </svg>
-      </div>
-
-      <div className="relative z-10 container">
-        <div className="-mx-4 flex flex-wrap items-center">
-          {/* Left Column - Text Content */}
-          <div className="w-full px-4 lg:w-[65%]">
-            <h2 className="mb-5 text-left text-3xl leading-tight font-bold text-black sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight dark:text-white">
-              Ready to Transform
-              <br />
-              <span className="text-primary">Your Business?</span>
+    <section className="px-4 py-16 md:py-20 lg:py-28">
+      <div className="relative container overflow-hidden rounded-[28px] bg-[#7332FE] px-6 py-12 sm:px-10 md:py-16 lg:px-16">
+        <div
+          aria-hidden="true"
+          className="absolute -top-24 -left-20 h-64 w-64 rounded-full border border-white/15"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute right-[35%] bottom-[-100px] h-64 w-64 rotate-12 border border-white/15"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute top-8 right-8 h-12 w-28 rotate-[-12deg] bg-white/10"
+        />
+        <div className="relative z-10 grid items-center gap-12 lg:grid-cols-[1fr_1.05fr] lg:gap-8">
+          <div className="max-w-[570px]">
+            <span className="mb-5 inline-flex items-center rounded-full bg-white/15 px-4 py-2 text-sm font-semibold text-white">
+              Seedflow beta <span className="ml-2">✨</span>
+            </span>
+            <h2 className="mb-5 text-3xl leading-tight font-bold tracking-[-0.02em] text-white sm:text-4xl md:text-[46px]">
+              Simpler finances. More room to grow.
             </h2>
-            <p className="text-body-color dark:text-body-color-dark mb-0 text-left text-base leading-relaxed sm:text-lg md:text-xl">
-              From custom software development and e-commerce solutions to SEO
-              optimization and mobile apps — we provide end-to-end digital
-              services designed to help your business grow, scale, and succeed
-              in today's competitive market.
+            <p className="mb-8 max-w-[500px] text-base leading-8 text-white/75 md:text-lg">
+              Create your account and explore a simpler way to manage invoices,
+              expenses, and the money moving through your business.
             </p>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/signup"
+                className="inline-flex items-center rounded-full bg-white px-6 py-3.5 text-sm font-bold text-[#7332FE] transition duration-300 hover:bg-white/90"
+              >
+                Join the beta
+                <span aria-hidden="true" className="ml-2 text-lg">
+                  →
+                </span>
+              </Link>
+              <Link
+                href="/#how-it-works"
+                className="inline-flex items-center rounded-full border border-white/30 px-6 py-3.5 text-sm font-bold text-white transition duration-300 hover:bg-white/10"
+              >
+                See how it works
+              </Link>
+            </div>
           </div>
 
-          {/* Right Column - CTA Button */}
-          <div className="mt-8 w-full px-4 lg:mt-0 lg:w-[35%]">
-            <div className="flex justify-end">
-              <Link
-                href="/contact"
-                className="bg-primary hover:bg-primary/80 inline-flex items-center justify-center rounded-xs px-8 py-4 text-center text-base font-semibold text-white transition duration-300 ease-in-out"
-              >
-                Get Started Now
-              </Link>
+          <div className="relative mx-auto w-full max-w-[580px] lg:translate-x-4">
+            <div className="absolute -top-4 right-3 z-20 rounded-xl bg-white px-4 py-3 shadow-xl sm:right-8">
+              <p className="text-[10px] font-semibold text-[#858091]">Invoices this month</p>
+              <p className="mt-1 text-lg font-bold text-[#242033]">₱86,420.00</p>
+              <span className="text-[10px] font-semibold text-[#21834b]">↑ 12.8%</span>
+            </div>
+            <div className="relative rotate-[-3deg] overflow-hidden rounded-2xl border border-white/20 bg-white p-2 shadow-[0_24px_50px_rgba(38,11,102,0.28)]">
+              <div className="flex h-8 items-center gap-1 border-b border-[#eeeaff] px-3">
+                <span className="h-2 w-2 rounded-full bg-[#e5defe]" />
+                <span className="h-2 w-2 rounded-full bg-[#e5defe]" />
+                <span className="h-2 w-2 rounded-full bg-[#e5defe]" />
+              </div>
+              <Image
+                src="/images/products/finance-suite.jpg"
+                alt="Seedflow accounting dashboard"
+                width={900}
+                height={600}
+                className="h-auto w-full rounded-b-xl"
+              />
             </div>
           </div>
         </div>
