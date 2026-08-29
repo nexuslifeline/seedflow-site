@@ -35,6 +35,11 @@ const Header = () => {
     }
   };
 
+  const closeNavigation = () => {
+    setNavbarOpen(false);
+    setOpenIndex(-1);
+  };
+
   const usePathName = usePathname();
 
   return (
@@ -102,6 +107,7 @@ const Header = () => {
                         {menuItem.path ? (
                           <Link
                             href={menuItem.path}
+                            onClick={closeNavigation}
                             className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                               usePathName === menuItem.path
                                 ? "text-primary"
@@ -112,12 +118,20 @@ const Header = () => {
                           </Link>
                         ) : (
                           <>
-                            <p
+                            <button
+                              type="button"
                               onClick={() => handleSubmenu(index)}
-                              className="text-dark group-hover:text-primary flex cursor-pointer items-center justify-between py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
+                              aria-expanded={openIndex === index}
+                              aria-controls={`submenu-${menuItem.id}`}
+                              aria-haspopup="menu"
+                              className="text-dark group-hover:text-primary flex w-full cursor-pointer items-center justify-between border-0 bg-transparent py-2 text-left text-base lg:mr-0 lg:inline-flex lg:w-auto lg:px-0 lg:py-6"
                             >
                               {menuItem.title}
-                              <span className="pl-3">
+                              <span
+                                className={`pl-3 transition-transform duration-200 ${
+                                  openIndex === index ? "rotate-180" : ""
+                                }`}
+                              >
                                 <svg width="25" height="24" viewBox="0 0 25 24">
                                   <path
                                     fillRule="evenodd"
@@ -127,16 +141,20 @@ const Header = () => {
                                   />
                                 </svg>
                               </span>
-                            </p>
+                            </button>
                             <div
+                              id={`submenu-${menuItem.id}`}
+                              role="menu"
                               className={`submenu relative top-full left-0 rounded-sm bg-white transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                                 openIndex === index ? "block" : "hidden"
                               }`}
                             >
-                              {menuItem.submenu.map((submenuItem, index) => (
+                              {menuItem.submenu?.map((submenuItem, index) => (
                                 <Link
                                   href={submenuItem.path}
                                   key={index}
+                                  role="menuitem"
+                                  onClick={closeNavigation}
                                   className="text-dark hover:text-primary block rounded-sm py-2.5 text-sm lg:px-3"
                                 >
                                   {submenuItem.title}
@@ -152,10 +170,11 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end lg:pr-0">
                 <Link
-                  href="/contact"
+                  href="/signup"
+                  onClick={closeNavigation}
                   className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9"
                 >
-                  Get Quote
+                  Join the beta
                 </Link>
               </div>
             </div>

@@ -1,8 +1,8 @@
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
+import AppAdvantage from "@/components/AppAdvantage";
 import AboutHome from "@/components/About/AboutHome";
-import WhyChooseUs from "@/components/About/WhyChooseUs";
 import ReadyToHelp from "@/components/ReadyToHelp";
 import Brands from "@/components/Brands";
 import Teams from "@/components/Teams";
@@ -25,8 +25,8 @@ export default function Home() {
       <Hero />
       <Features />
       <HowItWorks />
+      <AppAdvantage />
       <AboutHome />
-      <WhyChooseUs />
       <ReadyToHelp />
       <Brands />
       <Teams />
