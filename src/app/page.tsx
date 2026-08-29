@@ -3,7 +3,7 @@ import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import AppAdvantage from "@/components/AppAdvantage";
 import ProductOverview from "@/components/ProductOverview";
-import ReadyToHelp from "@/components/ReadyToHelp";
+import FAQ from "@/components/FAQ";
 import Brands from "@/components/Brands";
 import Teams from "@/components/Teams";
 import Testimonials from "@/components/Testimonials";
@@ -27,7 +27,7 @@ export default function Home() {
       <HowItWorks />
       <AppAdvantage />
       <ProductOverview />
-      <ReadyToHelp />
+      <FAQ />
       <Brands />
       <Teams />
       <Testimonials />
