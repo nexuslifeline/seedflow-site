@@ -5,22 +5,23 @@ const Blog = () => {
   return (
     <section
       id="blog"
-      className="bg-gray-light dark:bg-bg-color-dark py-16 md:py-20 lg:py-28"
+      className="bg-white py-16 md:py-20 lg:py-28"
     >
       <div className="container">
-        <div className="w-full mx-auto text-center" style={{ maxWidth: "570px", marginBottom: "100px" }}>
-          <span className="text-primary dark:text-primary relative z-10 mb-2 block text-sm font-semibold tracking-wider uppercase">
-            Blog
+        <div className="mx-auto mb-12 w-full max-w-[650px] text-center md:mb-14">
+          <span className="border-primary/15 bg-primary/5 text-primary mb-5 inline-flex items-center rounded-full border px-4 py-2 text-sm font-semibold">
+            Our Blog <span className="ml-2">✨</span>
           </span>
-          <h2 className="mb-4 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]">
-            Our Latest Blogs
+          <h2 className="mb-5 text-3xl leading-tight font-bold tracking-[-0.02em] text-[#1e1a2f] sm:text-4xl md:text-[45px]">
+            Practical insights for clearer finances
           </h2>
-          <p className="text-base leading-relaxed text-body-color md:text-lg">
-            Stay ahead with insights and strategies that help your business grow. Discover how modern technology solves real business challenges.
+          <p className="text-base leading-8 text-[#626074] md:text-lg">
+            Simple ideas to help you manage invoices, understand expenses, and
+            make better decisions as your business grows.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 lg:gap-6">
           {blogData.map((blog) => (
             <div key={blog.id} className="w-full">
               <SingleBlog blog={blog} />

@@ -3,49 +3,63 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "5 SEO Strategies That Increased Our Client Revenue by 300%",
+    title: "Why organized invoices matter as your business grows",
     paragraph:
-      "Discover proven SEO techniques that transform website traffic into measurable business growth. Learn how strategic optimization drives real results.",
-    image: "/images/blog/blog-01.jpg",
+      "A clear invoice process helps you get paid on time, keep better records, and spend less time searching for financial details.",
+    image: "/images/blog/invoice-management.png",
     author: {
-      name: "Jen",
+      name: "Seedflow Team",
       image: "/images/teams/jen.jpg",
-      designation: "SEO Lead",
+      designation: "Product Education",
     },
-    tags: ["SEO", "Growth"],
-    publishDate: "2025",
+    tags: ["Invoicing", "Growth"],
+    publishDate: "Aug 2026",
     slug: "seo-strategies",
   },
   {
     id: 2,
-    title:
-      "Why Next.js is the Future of E-commerce Development: Building Scalable Online Stores",
+    title: "A simple guide to tracking business expenses",
     paragraph:
-      "Explore how modern headless architecture with Next.js creates faster, more scalable online stores that convert better and rank higher in search.",
-    image: "/images/blog/blog-02.jpg",
+      "Learn how consistent expense tracking gives you a clearer picture of where your money goes and what your business needs next.",
+    image: "/images/blog/expense-tracking.png",
     author: {
-      name: "Paul",
+      name: "Seedflow Team",
       image: "/images/teams/paul.jpg",
-      designation: "Product Engineering Lead",
+      designation: "Product Education",
     },
-    tags: ["Development", "E-commerce"],
-    publishDate: "2025",
+    tags: ["Expenses", "Finance"],
+    publishDate: "Aug 2026",
     slug: "nextjs-ecommerce",
   },
   {
     id: 3,
-    title: "Mobile App Development: Native vs Cross-Platform Solutions",
+    title: "Cash flow basics every growing business should know",
     paragraph:
-      "Make informed decisions about your mobile strategy. We break down the pros and cons to help you choose the right approach for your business goals.",
-    image: "/images/blog/blog-03.jpg",
+      "Cash flow is easier to manage when you understand what is coming in, what is going out, and what needs your attention next.",
+    image: "/images/blog/cash-flow-basics.png",
     author: {
-      name: "Encio",
+      name: "Seedflow Team",
       image: "/images/teams/denis.jpg",
-      designation: "Business Operations Lead",
+      designation: "Product Education",
     },
-    tags: ["Mobile", "Development"],
-    publishDate: "2025",
+    tags: ["Cash Flow", "Planning"],
+    publishDate: "Aug 2026",
     slug: "mobile-development",
+  },
+  {
+    id: 4,
+    title: "How to prepare your business for a smoother tax season",
+    paragraph:
+      "Better records make tax time easier. Learn the simple financial habits that help you stay organized throughout the year.",
+    image: "/images/blog/tax-season-planning.png",
+    author: {
+      name: "Seedflow Team",
+      image: "/images/teams/paul.jpg",
+      designation: "Product Education",
+    },
+    tags: ["Tax Planning", "Records"],
+    publishDate: "Aug 2026",
+    slug: "tax-season-planning",
   },
 ];
 export default blogData;
