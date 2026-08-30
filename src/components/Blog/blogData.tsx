@@ -14,7 +14,7 @@ const blogData: Blog[] = [
     },
     tags: ["Invoicing", "Growth"],
     publishDate: "Aug 2026",
-    slug: "seo-strategies",
+    slug: "organized-invoices",
   },
   {
     id: 2,
@@ -29,7 +29,7 @@ const blogData: Blog[] = [
     },
     tags: ["Expenses", "Finance"],
     publishDate: "Aug 2026",
-    slug: "nextjs-ecommerce",
+    slug: "tracking-business-expenses",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const blogData: Blog[] = [
     },
     tags: ["Cash Flow", "Planning"],
     publishDate: "Aug 2026",
-    slug: "mobile-development",
+    slug: "cash-flow-basics",
   },
   {
     id: 4,

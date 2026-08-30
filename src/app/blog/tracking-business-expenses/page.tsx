@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Learn how consistent expense tracking gives you a clearer picture of where your money goes and what your business needs next.",
 };
 
-const NextJSEcommercePage = () => {
+const TrackingBusinessExpensesPage = () => {
   return (
     <BlogArticle
       title="A simple guide to tracking business expenses"
@@ -44,4 +44,4 @@ const NextJSEcommercePage = () => {
   );
 };
 
-export default NextJSEcommercePage;
+export default TrackingBusinessExpensesPage;

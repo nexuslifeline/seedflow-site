@@ -9,6 +9,25 @@ const nextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/blog/seo-strategies",
+        destination: "/blog/organized-invoices",
+        permanent: true,
+      },
+      {
+        source: "/blog/nextjs-ecommerce",
+        destination: "/blog/tracking-business-expenses",
+        permanent: true,
+      },
+      {
+        source: "/blog/mobile-development",
+        destination: "/blog/cash-flow-basics",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Learn how a clear invoice process helps growing businesses get paid on time and keep better financial records.",
 };
 
-const SEOStrategiesPage = () => {
+const OrganizedInvoicesPage = () => {
   return (
     <BlogArticle
       title="Why organized invoices matter as your business grows"
@@ -44,4 +44,4 @@ const SEOStrategiesPage = () => {
   );
 };
 
-export default SEOStrategiesPage;
+export default OrganizedInvoicesPage;

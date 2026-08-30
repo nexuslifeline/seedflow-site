@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "Understand what is coming in, what is going out, and how simple cash-flow habits support healthier business growth.",
 };
 
-const MobileDevelopmentPage = () => {
+const CashFlowBasicsPage = () => {
   return (
     <BlogArticle
       title="Cash flow basics every growing business should know"
@@ -44,4 +44,4 @@ const MobileDevelopmentPage = () => {
   );
 };
 
-export default MobileDevelopmentPage;
+export default CashFlowBasicsPage;
