@@ -4,10 +4,10 @@ export function getContactNotificationTemplate(data: {
   email: string;
   phone?: string;
   company?: string;
-  service?: string;
+  topic?: string;
   message: string;
 }): string {
-  const { name, email, phone, company, service, message } = data;
+  const { name, email, phone, company, topic, message } = data;
 
   return `
 <!doctype html>
@@ -57,11 +57,11 @@ export function getContactNotificationTemplate(data: {
         <p><strong>Email:</strong> ${email}</p>
         ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ""}
         ${company ? `<p><strong>Company:</strong> ${company}</p>` : ""}
-        ${service ? `<p><strong>Service Interest:</strong> ${service}</p>` : ""}
+        ${topic ? `<p><strong>Topic:</strong> ${topic}</p>` : ""}
       </div>
 
       <div style="background-color: #e9ecef; padding: 20px; border-radius: 8px">
-        <h3 style="color: #495057; margin-top: 0">Project Details</h3>
+        <h3 style="color: #495057; margin-top: 0">Message</h3>
         <p style="white-space: pre-wrap; line-height: 1.6">${message}</p>
       </div>
 
@@ -139,11 +139,9 @@ export function getAutoReplyTemplate(data: { name: string }): string {
       >
         <h3 style="color: #495057; margin-top: 0">What happens next?</h3>
         <ul style="color: #495057">
-          <li>Our team will review your project requirements</li>
-          <li>We'll prepare a customized proposal for your needs</li>
-          <li>
-            We'll schedule a consultation call to discuss your project in detail
-          </li>
+          <li>We will review your message</li>
+          <li>We will reply within 24 hours</li>
+          <li>If you asked about the beta, we will help you get started</li>
         </ul>
       </div>
 

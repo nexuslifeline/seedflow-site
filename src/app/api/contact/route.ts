@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, phone, company, service, message } = body;
+    const { name, email, phone, company, topic, message } = body;
 
     // Server-side validation
     if (!name || !email || !message) {
@@ -47,7 +47,7 @@ export async function POST(request: NextRequest) {
       email,
       phone,
       company,
-      service,
+      topic,
       message,
     });
 

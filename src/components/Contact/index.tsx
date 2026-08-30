@@ -8,7 +8,7 @@ interface FormData {
   email: string;
   phone: string;
   company: string;
-  service: string;
+  topic: string;
   message: string;
 }
 
@@ -24,7 +24,7 @@ const Contact = ({ isPage = false }: { isPage?: boolean }) => {
     email: "",
     phone: "",
     company: "",
-    service: "",
+    topic: "",
     message: "",
   });
 
@@ -49,7 +49,7 @@ const Contact = ({ isPage = false }: { isPage?: boolean }) => {
     }
 
     if (!formData.message.trim()) {
-      newErrors.message = "Project details are required";
+      newErrors.message = "A message is required";
     }
 
     setErrors(newErrors);
@@ -109,7 +109,7 @@ const Contact = ({ isPage = false }: { isPage?: boolean }) => {
           email: "",
           phone: "",
           company: "",
-          service: "",
+          topic: "",
           message: "",
         });
       } else {
@@ -145,11 +145,11 @@ const Contact = ({ isPage = false }: { isPage?: boolean }) => {
               data-wow-delay=".15s"
             >
               <h2 className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl dark:text-white">
-                Get In Touch
+                Get in touch
               </h2>
               <p className="text-body-color dark:text-body-color-dark mb-12 text-base font-medium">
-                Ready to start your project? Let's discuss how we can help
-                transform your business with our digital solutions.
+                Questions about Seedflow or the beta? Send a message and we will
+                get back to you.
               </p>
 
               {/* Success/Error Messages */}
@@ -266,32 +266,24 @@ const Contact = ({ isPage = false }: { isPage?: boolean }) => {
                   <div className="w-full px-4">
                     <div className="mb-8">
                       <label
-                        htmlFor="service"
+                        htmlFor="topic"
                         className="text-dark mb-3 block text-sm font-medium dark:text-white"
                       >
-                        Service Interest
+                        How can we help?
                       </label>
                       <select
-                        id="service"
-                        name="service"
-                        value={formData.service}
+                        id="topic"
+                        name="topic"
+                        value={formData.topic}
                         onChange={handleInputChange}
                         className="border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none"
                       >
-                        <option value="">Select a service</option>
-                        <option value="web-development">Web Development</option>
-                        <option value="mobile-development">
-                          Mobile App Development
+                        <option value="">Select a topic</option>
+                        <option value="beta-access">Join the beta</option>
+                        <option value="product-question">
+                          Product question
                         </option>
-                        <option value="seo-marketing">
-                          SEO & Digital Marketing
-                        </option>
-                        <option value="ecommerce">E-commerce Solutions</option>
-                        <option value="custom-software">
-                          Custom Software Development
-                        </option>
-                        <option value="website-audit">Website Audit</option>
-                        <option value="consultation">Consultation</option>
+                        <option value="feedback">Feedback</option>
                         <option value="other">Other</option>
                       </select>
                     </div>
@@ -302,7 +294,7 @@ const Contact = ({ isPage = false }: { isPage?: boolean }) => {
                         htmlFor="message"
                         className="text-dark mb-3 block text-sm font-medium dark:text-white"
                       >
-                        Project Details *
+                        Message *
                       </label>
                       <textarea
                         id="message"
@@ -310,7 +302,7 @@ const Contact = ({ isPage = false }: { isPage?: boolean }) => {
                         value={formData.message}
                         onChange={handleInputChange}
                         rows={5}
-                        placeholder="Tell us about your project, goals, timeline, and any specific requirements..."
+                        placeholder="Tell us what you need help with..."
                         required
                         className={`border-stroke text-body-color focus:border-primary dark:text-body-color-dark dark:shadow-two dark:focus:border-primary w-full resize-none rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base outline-hidden dark:border-transparent dark:bg-[#2C303B] dark:focus:shadow-none ${
                           errors.message

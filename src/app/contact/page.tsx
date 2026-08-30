@@ -4,7 +4,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us | Seedflow",
-  description: "Get in touch with Seedflow and learn how we can help you manage your business finances.",
+  description:
+    "Contact Seedflow with questions about the beta, your workspace, or how to get started.",
   // other metadata
 };
 
