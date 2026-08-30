@@ -61,7 +61,7 @@ const CTA = () => {
                 <span className="h-2 w-2 rounded-full bg-[#e5defe]" />
               </div>
               <Image
-                src="/images/products/finance-suite.jpg"
+                src="/images/products/finance-suite.png"
                 alt="Seedflow accounting dashboard"
                 width={900}
                 height={600}

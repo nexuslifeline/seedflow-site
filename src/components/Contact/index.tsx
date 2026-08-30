@@ -18,7 +18,7 @@ interface FormErrors {
   message?: string;
 }
 
-const Contact = () => {
+const Contact = ({ isPage = false }: { isPage?: boolean }) => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     email: "",
@@ -129,12 +129,19 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
-      <div className="container">
+    <section
+      id="contact"
+      className={`overflow-hidden pb-16 md:pb-20 lg:pb-28 ${
+        isPage
+          ? "pt-36 md:pt-40 lg:pt-[180px]"
+          : "pt-16 md:pt-20 lg:pt-28"
+      }`}
+    >
+      <div className="container px-6 md:px-8 lg:px-4">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
-              className="shadow-three dark:bg-gray-dark mb-12 rounded-xs bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="shadow-three dark:bg-gray-dark mb-12 rounded-xs bg-white px-6 py-8 md:p-10 lg:mb-5"
               data-wow-delay=".15s"
             >
               <h2 className="mb-3 text-2xl font-bold text-black sm:text-3xl lg:text-2xl xl:text-3xl dark:text-white">

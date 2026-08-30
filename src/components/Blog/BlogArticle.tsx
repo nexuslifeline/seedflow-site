@@ -34,10 +34,10 @@ const BlogArticle = ({
   tags,
 }: BlogArticleProps) => {
   return (
-    <section className="pt-[150px] pb-[120px]">
-      <div className="container">
+    <section className="pt-36 pb-16 md:pt-40 md:pb-20 lg:pt-[180px] lg:pb-28">
+      <div className="container px-6 md:px-8 lg:px-4">
         <div className="mx-auto max-w-[820px]">
-          <h1 className="mb-8 text-3xl leading-tight font-bold text-[#1e1a2f] sm:text-4xl sm:leading-tight md:text-5xl">
+          <h1 className="mb-8 text-3xl leading-tight font-bold tracking-[-0.02em] text-balance text-[#1e1a2f] sm:text-4xl sm:leading-tight md:text-5xl">
             {title}
           </h1>
 
@@ -102,7 +102,7 @@ const BlogArticle = ({
               </div>
             ))}
 
-            <div className="bg-primary/10 mb-10 rounded-xl p-8 md:p-9">
+            <div className="bg-primary/10 mb-10 rounded-xl p-6 md:p-9">
               <p className="text-center text-base font-medium italic text-[#514d61]">
                 &quot;{quote}&quot;
               </p>

@@ -53,10 +53,10 @@ const Header = () => {
       >
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
-            <div className="w-60 max-w-full px-4 xl:mr-12">
+            <div className="w-auto shrink-0 px-4 xl:mr-12">
               <Link
                 href="/"
-                className={`header-logo block w-full ${
+                className={`header-logo inline-flex items-center ${
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
@@ -65,7 +65,7 @@ const Header = () => {
                   alt="Seedflow"
                   width={180}
                   height={41}
-                  className="h-10 w-auto"
+                  className="h-8 w-auto max-w-none object-contain sm:h-10"
                 />
               </Link>
             </div>
@@ -188,14 +188,14 @@ const Header = () => {
                 <Link
                   href="/signin"
                   onClick={closeNavigation}
-                  className="text-dark hover:text-primary mr-4 hidden text-sm font-semibold transition duration-300 sm:inline-flex"
+                  className="text-dark hover:text-primary mr-4 hidden text-sm font-semibold transition duration-300 lg:inline-flex"
                 >
                   Sign in
                 </Link>
                 <Link
                   href="/signup"
                   onClick={closeNavigation}
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9"
+                  className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 lg:block lg:px-6 xl:px-9"
                 >
                   Join the beta
                 </Link>

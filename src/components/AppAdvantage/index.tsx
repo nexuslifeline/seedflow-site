@@ -64,7 +64,7 @@ const AppAdvantage = () => {
                 <span className="h-2 w-2 rounded-full bg-[#e5defe]" />
               </div>
               <Image
-                src="/images/products/finance-suite-black.jpg"
+                src="/images/products/finance-suite-black.png"
                 alt="Seedflow accounting dashboard"
                 width={900}
                 height={600}
@@ -79,7 +79,7 @@ const AppAdvantage = () => {
                 <span className="h-2 w-2 rounded-full bg-[#e5defe]" />
               </div>
               <Image
-                src="/images/products/finance-suite.jpg"
+                src="/images/products/finance-suite.png"
                 alt="Seedflow accounting dashboard overview"
                 width={900}
                 height={600}

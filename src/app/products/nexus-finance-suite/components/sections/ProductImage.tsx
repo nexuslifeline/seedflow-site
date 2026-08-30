@@ -6,7 +6,7 @@ const ProductImage = () => {
       <div className="relative w-full max-w-[900px] overflow-hidden rounded-xl border-4 border-primary/20 shadow-2xl dark:border-primary/30">
         {/* Light mode image */}
         <Image
-          src="/images/products/finance-suite.jpg"
+          src="/images/products/finance-suite.png"
           alt="Seedflow accounting dashboard"
           width={900}
           height={600}
@@ -15,7 +15,7 @@ const ProductImage = () => {
         />
         {/* Dark mode image */}
         <Image
-          src="/images/products/finance-suite-black.jpg"
+          src="/images/products/finance-suite-black.png"
           alt="Seedflow accounting dashboard"
           width={900}
           height={600}
