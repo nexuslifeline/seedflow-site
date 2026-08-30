@@ -28,6 +28,10 @@ const Header = () => {
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
   const handleSubmenu = (index) => {
+    if (window.matchMedia("(min-width: 992px)").matches) {
+      return;
+    }
+
     if (openIndex === index) {
       setOpenIndex(-1);
     } else {
@@ -128,7 +132,7 @@ const Header = () => {
                             >
                               {menuItem.title}
                               <span
-                                className={`pl-3 transition-transform duration-200 ${
+                                className={`pl-3 transition-transform duration-200 lg:group-hover:rotate-180 ${
                                   openIndex === index ? "rotate-180" : ""
                                 }`}
                               >
